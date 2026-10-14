@@ -19,7 +19,8 @@ class ContactController extends Controller
     
     public function contactList()
     {
-        return view('contact-list');
+        $contacts = Contact::all();
+        return view('contact-list' , compact('contacts'));
     }
 
     /**
