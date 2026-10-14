@@ -10,9 +10,16 @@ class ContactController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+   
+    public function contact()
     {
-        //
+        return view('contact');
+    }
+
+    
+    public function contactList()
+    {
+        return view('contact-list');
     }
 
     /**
